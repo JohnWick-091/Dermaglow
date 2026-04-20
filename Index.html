@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#775a19",
+                    "surface-container-lowest": "#0e0e0e",
+                    "background": "#131313",
+                    "secondary-fixed": "#f3e0c0",
+                    "tertiary-container": "#c19e92",
+                    "secondary": "#d6c4a5",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-on-surface": "#313030",
+                    "surface-tint": "#e9c176",
+                    "tertiary-fixed-dim": "#e4beb2",
+                    "outline": "#9a8f80",
+                    "on-secondary-fixed": "#231a06",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed": "#ffdea5",
+                    "surface-variant": "#353534",
+                    "on-background": "#e5e2e1",
+                    "tertiary": "#e4beb2",
+                    "on-secondary": "#392f19",
+                    "on-secondary-container": "#c4b395",
+                    "outline-variant": "#4e4639",
+                    "on-primary-container": "#4e3700",
+                    "primary": "#e9c176",
+                    "on-primary-fixed": "#261900",
+                    "surface-container": "#201f1f",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-surface-variant": "#d1c5b4",
+                    "on-secondary-fixed-variant": "#51452d",
+                    "surface-dim": "#131313",
+                    "on-error": "#690005",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#2b160f",
+                    "on-tertiary-container": "#4e352c",
+                    "secondary-fixed-dim": "#d6c4a5",
+                    "on-primary": "#412d00",
+                    "primary-container": "#c5a059",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#5b4137",
+                    "on-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "on-tertiary": "#422b22",
+                    "surface": "#131313",
+                    "surface-bright": "#3a3939",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary-container": "#51452d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glassmorphism-tonal-shift {
+            background: linear-gradient(180deg, rgba(19, 19, 19, 0.4) 0%, rgba(19, 19, 19, 0) 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(233, 193, 118, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Cluster -->
+<header class="fixed top-0 w-full z-50 bg-transparent">
+<nav class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<!-- Brand Identity -->
+<div class="text-2xl font-headline font-medium tracking-tight text-[#E9C176]">
+                Derma <span class="italic font-light">glow</span>
+</div>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#E9C176] font-semibold text-xs uppercase tracking-[0.1em] transition-all duration-500 ease-in-out" href="#">Home</a>
+<a class="text-[#E5E2E1]/70 font-label font-medium uppercase tracking-[0.1em] text-xs hover:text-[#E9C176] transition-all duration-500 ease-in-out" href="#">About us</a>
+<div class="group relative">
+<button class="flex items-center gap-1 text-[#E5E2E1]/70 font-label font-medium uppercase tracking-[0.1em] text-xs hover:text-[#E9C176] transition-all duration-500 ease-in-out">
+                        Services
+                        <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<a class="text-[#E5E2E1]/70 font-label font-medium uppercase tracking-[0.1em] text-xs hover:text-[#E9C176] transition-all duration-500 ease-in-out" href="#">Contact us</a>
+</div>
+<!-- Trailing Action -->
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label text-xs uppercase tracking-widest font-bold flex items-center gap-3 scale-95 active:scale-90 transition-transform hover:shadow-[0_0_20px_rgba(233,193,118,0.3)]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+                Book Consultation
+            </button>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative h-screen w-full overflow-hidden flex items-end justify-between px-12 pb-24">
+<!-- Background Hero Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic close-up of a woman's serene face with warm skin tones, holding a rose quartz roller against a deep black background" class="w-full h-full object-cover object-center brightness-[0.75] contrast-[1.05]" data-alt="cinematic close-up of a serene woman's face with warm glowing skin, holding a rose quartz facial roller, high-contrast lighting, near-black moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEuwKzlmLaFs4V12_0UJUKjF82-Ib0quaiPMQfTfiekA81WsWxREEHP0Gxi-2K_9toxjLLQYli44vOLS40AebFCKXVYeMrMDMkJxkDUDfFORQBweSr-Ui1APXxu8Ni6i2vOq3WGU2H8GAdbc2zy2ydGQlDgEBFz3yardfsYM5zuRdW-DCwZ-foNVXUT1FDYuh-oNJReZKuyaDLrNq2oE-6ASPmnq80G7gmjnCetc1yLT3pu0eltGm6wJWItjx7FBS4l03o_nwZ_BQ"/>
+<!-- Cinematic Vignette & Bottom Fade -->
+</div>
+<!-- Left Content: Headline Narrative -->
+<div class="relative z-10 max-w-3xl mb-12">
+<!-- Pill Label -->
+<div class="inline-flex items-center gap-3 bg-surface-container-high/40 backdrop-blur-md px-6 py-2 rounded-full mb-8 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-[14px]">diamond</span>
+<span class="text-on-surface font-label text-[10px] uppercase tracking-[0.2em] font-semibold">Nature's Finest</span>
+<span class="material-symbols-outlined text-primary text-[14px]">diamond</span>
+</div>
+<!-- Main Editorial Headline -->
+<h1 class="font-headline leading-[1.1] text-on-surface text-4xl lg:text-5xl">Elevate Your Skincare<br/>Routine with <span class="italic font-light opacity-90">Nature's</span><br/><span class="italic font-light text-primary text-glow">Finest</span></h1>
+</div>
+<!-- Right Content: Floating Interactive Card -->
+<div class="relative z-10 w-full max-w-md hidden xl:block">
+<div class="bg-surface-container-high/40 backdrop-blur-3xl rounded-xl border border-outline-variant/10 shadow-2xl p-6">
+<!-- Overlapping Avatars -->
+<div class="flex items-center mb-8">
+<img alt="Team member avatar" class="rounded-full border-2 border-surface-container object-cover w-10 h-10" data-alt="close-up portrait of a professional female dermatologist with a warm smile in a clean studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCPko9iRnd1xh-4yHWclolDK68z6up3orsgFqTfY70nI2SdUziR637bVv0yH8PsKxBShtFIHmdRIv0dGpjOdsN6zmQWzxYvlLKYrt_P8pXPGEKtaQDmmwVlBFmI7mRyd4Bfcg1ICehxv7C_LOSrPJ6JNhlt2C2-wBbYJKOSM23n-MNrjk6uo5jEqH6GcjAPnFpezxmSp0A-C61UYi24JKR5IaewEih73lmtoHgA8arN2HZeMSxxEwm5bv9FRBkwOofAWhP1DhObyo"/>
+<img alt="Team member avatar" class="rounded-full border-2 border-surface-container object-cover w-10 h-10" data-alt="professional portrait of a male skincare specialist looking confident in a minimalist clinical environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMH7qca1sFLFuYTpNWrRPe8hEv8kIA2RrNRUTnz4Q8XCxD8Pd-e7HsBlR4vOzZ2xoOBA2X9tpI_53DCROMQvLpHQrI-KUFaaVlMWgvwmZNMKBCSoU4QRw-O6zIW1rUwza6cT1UeVdzAo7po6pVDnrWhqZB6fVmvNqknaQSUG7gdtJxwfqcfVR7PiMA7o4t--C-AUPbJiEx-1_UpbvlwuFlM9iFAcCtbBHoxWa6e3jYTdEepHZzraz8252uoxgBq8Ak1-WPDF1TQSE"/>
+<img alt="Team member avatar" class="rounded-full border-2 border-surface-container object-cover w-10 h-10" data-alt="headshot of a smiling female aesthetician with natural makeup and glowing skin against a soft grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkjhHYncj_MdMrP4ULrJ8xQl59Z8Km2-NYEgKWE_Wj3zZ5ANWYfv-vPei94ySPrHlATIeA0zzqXt5KxKvTsYO1vLeA4f4ED3G2BociF8esGOJfzCikq5OE0Vvk4oj2MG2MN1cCmqEB4Ghck-EdPA02RKpakwrGQrZlEMZFiyJFuNmD0L6HGgVS0VZEcC8_WeO28cOalxnVJnYtmDsa0hNgMhJU0QwceaabLp7NKmZ-BExYBjVZP4RwqiVtFlOUcToMgvmqRJFblDY"/>
+<div class="h-14 rounded-full border-2 border-surface-container bg-primary flex items-center justify-center text-on-primary font-bold text-sm">
+                        +12
+                    </div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed font-light text-sm mb-6">
+                    Ready to transform your skin? Book a personalized consultation today and discover the perfect routine for your unique skin needs!
+                </p>
+<!-- CTA Button -->
+<button class="w-full bg-on-surface text-surface rounded-full font-label uppercase tracking-widest font-extrabold flex items-center justify-center gap-4 group transition-all duration-500 hover:bg-primary hover:text-on-primary py-3 text-xs">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+                    Book a Consultation
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Aesthetic Accent (Editorial Detail) -->
+<div class="fixed bottom-12 left-12 z-20 pointer-events-none">
+<div class="flex items-center gap-8 text-[10px] uppercase tracking-[0.4em] text-on-surface/40 font-label">
+<span>Paris</span>
+<span class="w-12 h-[1px] bg-outline-variant/30"></span>
+<span>London</span>
+<span class="w-12 h-[1px] bg-outline-variant/30"></span>
+<span>New York</span>
+</div>
+</div>
+</body></html>

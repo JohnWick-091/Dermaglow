@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#c4b395",
+                        "on-primary-fixed": "#261900",
+                        "surface-variant": "#353534",
+                        "surface-bright": "#3a3939",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-fixed": "#231a06",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "inverse-surface": "#e5e2e1",
+                        "primary-container": "#c5a059",
+                        "on-secondary-fixed-variant": "#51452d",
+                        "tertiary-container": "#c19e92",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#392f19",
+                        "outline": "#9a8f80",
+                        "on-tertiary-fixed-variant": "#5b4137",
+                        "on-surface": "#e5e2e1",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#775a19",
+                        "secondary-fixed": "#f3e0c0",
+                        "on-tertiary-fixed": "#2b160f",
+                        "on-tertiary": "#422b22",
+                        "on-surface-variant": "#d1c5b4",
+                        "on-background": "#e5e2e1",
+                        "secondary": "#d6c4a5",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#ffdea5",
+                        "secondary-container": "#51452d",
+                        "primary-fixed-dim": "#e9c176",
+                        "on-error": "#690005",
+                        "primary": "#e9c176",
+                        "tertiary-fixed": "#ffdbce",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline-variant": "#4e4639",
+                        "background": "#131313",
+                        "tertiary-fixed-dim": "#e4beb2",
+                        "on-tertiary-container": "#4e352c",
+                        "on-primary": "#412d00",
+                        "tertiary": "#e4beb2",
+                        "secondary-fixed-dim": "#d6c4a5",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "on-primary-container": "#4e3700",
+                        "surface-tint": "#e9c176",
+                        "surface-container-high": "#2a2a2a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-mix italic {
+            font-family: 'Newsreader';
+            font-style: italic;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- Top Navigation Bar - Updated to solid background for better visibility -->
+<main>
+<!-- Services Section -->
+<section class="bg-[#F5F5F5] py-24 md:py-32 px-6 md:px-12">
+<div class="max-w-[1400px] mx-auto">
+<!-- Section Header -->
+<div class="mb-16">
+<span class="font-body text-[10px] tracking-[0.2em] uppercase text-outline mb-4 block">CHOOSE A CATEGORY</span>
+<h2 class="font-headline text-4xl md:text-5xl text-surface">
+<span class="font-bold">Our Services</span>
+<span class="font-light text-outline"> / Treatments</span>
+</h2>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
+<!-- Row 1: Left Card (Tall/Narrow) -->
+<div class="md:col-span-3 h-[400px] md:h-full relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="macro detail of facial skin texture being analyzed with professional tools in a minimalist clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFiJ81Wtrfudtis8A638se-6xiTbvCD9GNn6JY7xAB1uZombXNn6Ml4uAjZqUJ8AV0ZtJKt4mhHBKfCLEiMShH9XOpZesOKIsMOfw0XFaoL7pI6gc3Nv9AU3OeBC5f7tQk60W1xH2EXRAZGsBGyU_SjTk4MNgB_w-6E7JVCBSDNm9Abe_eIjBm7MeNXnW2FxrdGzST1u4OcwN-kB4OZxQZ0PTIX27-YxmE6TUHv7PCPBvH3gA2lG8HyF0jJ0U26Ewct__h-nVOCn4"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Skin Consultation</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+<!-- Row 1: Middle Card (Tall/Wider) -->
+<div class="md:col-span-5 h-[400px] md:h-full relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="person receiving a luxury facial treatment with soft focus background and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0YcnBv7UzFOZMO8oxYx0P2DNQ26DRQ1VReUK46dmafgC5AZr5gAMc9L5pB3gHinOEuY0Zewx4MlYvE1PNciQcHPQJJu8hOtAbJDjtovImQBQ2OGaHUA55yEA5_QCMLFUay6KPJuMdJ0iekG8EE5zX4JW_D2Q0iKybvHNoYSglrk8N6bJcQPdsPjpwDuBWGEP7oK-OACBmODhp9V1X_P_SbJY6Q29u2WmUwDbzfviOumCCXaJTVgPR0xZ0TrPK7xbWMO3Uup7tn60"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Facial Treatments</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+<!-- Row 1: Right Side (Stacked Cards) -->
+<div class="md:col-span-4 flex flex-col gap-6 h-auto md:h-full">
+<!-- Laser Therapy -->
+<div class="flex-1 relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm min-h-[250px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="advanced laser dermatology equipment in use with a soft red ambient glow and medical precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-plWtQbXZad3icgsqsk-UcesqwXQFW6fYTQf6TipMEDljkt0YgXgMQrne_no97CeuZeq4ZiOYWo3s0_rQDLm0H8U1baGdL-6iixY_4KBnVVyN2kZ_ekJ3weI4kdcbZJUchBpQ3xl_-S3fLVg62WURhR-WRhnEnsm-xV7xD2wI6QViyckbyXtcac2QXEccUmEUe7wegQQC2C74kSMgVufkDO0CTVc_k7f-VgYwhsHhWKRjg0gxP5YCQoa9uZXHZKkMcRZg-KT8nVU"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Laser Therapy</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+<!-- Chemical Peels -->
+<div class="flex-1 relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm min-h-[250px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="minimalist aesthetic shot of luxury skincare serums and liquids reflecting light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRmn34rwxacHhMKS9n27_um0x20qXv4-3xSBiQmQxEVhJAVxPh7TiCVP3D7BhgNiqxiaJybwnvR0Kp5pFys5nDs9rVmxBcd1Bw0v7q0xrQuu29H9d3Y4TE4dbsDsJQXxNaYVn4FjndlJbtYC0YDcXAIQ_2gJxWvUgN0z54Mfe680cGZONZ0OKT0p1F5kuGtIIwi4qmGyFsicWX3muUA1dQqxmjUNdS3ljAptfv02oPQ-He0Knru05BULLGNCy1Sh-T72Y_RVmysCY"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Chemical Peels</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Three Cards -->
+<!-- Acne Treatment -->
+<div class="md:col-span-4 h-[300px] relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="clear glowing skin of a woman in profile with soft natural light highlighting facial contours" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3uQNzkTbxuaP7SInI-gJe0bxrbE5ZFzZrFTYlIVjEsC7DheJ_RYz83p3M7_feJcg4R9uPwY_EyvUPx0SaYQ_EVQwfeSh1FlGtRPyoH-dXBaZQk2eGBIcy59c8VFpO7yOkDTdHQuZNHwL5dNSrsZ_O5o8ub79Lnhijk5ZbRw0FoFpSllhL8t37NFCtEJwVpJD02NFqgo3bswpn69cxWXPJMus4vQnK7P9noOoGiK7nBPOCq9EZiEObgKMUX9_Da4BsYH60N0ESfgQ"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Acne Treatment</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+<!-- Relevant Skincare Visual -->
+<div class="md:col-span-4 h-[300px] relative overflow-hidden group rounded-[16px] bg-surface-container shadow-sm">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="abstract close up of clean cosmetic cream textures with soft shadows and elegant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlzqtuTD-N3_HFv1BNrdy-TbKAcxvMLTs8aRoTLc9cZU6tYmw0v7K4V263ZssyxiHI_Mk88jz5Iur1otR_7fq6cTDizKkF-OUAdgXJZBMP0NQXKTKU9TxC0YH_c_CCmsCLab8_WfJzEJNGND3D1RpMQuBQo8XCIzgsPnc3Rhpi4trNu3lOr_gsU2urb2DW9J5CiIdcmPWKdJ2OTkzUVs9ZdmmVkyBrYWUVVer-OYTn5-ASpQDrF2m_ekqP46vTUIXYDqFVohIoZU8"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+<div class="absolute top-6 left-6 z-10">
+<h3 class="text-white font-headline text-2xl font-medium tracking-tight">Medical Grade Skincare</h3>
+</div>
+<button class="absolute bottom-6 right-6 z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">chevron_right</span>
+</button>
+</div>
+<!-- More Services (Text-only) -->
+<div class="md:col-span-4 h-[300px] flex flex-col justify-center items-center rounded-[16px] bg-[#EBEBEB] shadow-sm group hover:bg-primary-container transition-all duration-500 cursor-pointer">
+<span class="font-headline text-2xl text-surface group-hover:text-white transition-colors duration-500 flex items-center gap-2">
+                            More Services <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+<p class="mt-4 font-body text-xs text-outline uppercase tracking-widest group-hover:text-white/80 transition-colors duration-500">Discover all treatments</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+</body></html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#775a19",
+                        "secondary-fixed": "#f3e0c0",
+                        "on-tertiary-container": "#4e352c",
+                        "on-secondary": "#392f19",
+                        "on-primary-container": "#4e3700",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface-variant": "#353534",
+                        "on-tertiary-fixed-variant": "#5b4137",
+                        "outline": "#9a8f80",
+                        "on-secondary-fixed": "#231a06",
+                        "primary": "#e9c176",
+                        "tertiary": "#e4beb2",
+                        "secondary-fixed-dim": "#d6c4a5",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary": "#412d00",
+                        "primary-container": "#c5a059",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#2b160f",
+                        "on-surface-variant": "#d1c5b4",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "primary-fixed-dim": "#e9c176",
+                        "primary-fixed": "#ffdea5",
+                        "error-container": "#93000a",
+                        "secondary": "#d6c4a5",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#51452d",
+                        "on-secondary-fixed-variant": "#51452d",
+                        "on-secondary-container": "#c4b395",
+                        "surface-tint": "#e9c176",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#ffdbce",
+                        "on-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "on-primary-fixed": "#261900",
+                        "background": "#131313",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary": "#422b22",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#c19e92",
+                        "tertiary-fixed-dim": "#e4beb2",
+                        "outline-variant": "#4e4639",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0a0a0a;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-blob {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(233, 193, 118, 0.08) 0%, rgba(233, 193, 118, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .glass-card {
+            background: rgba(42, 42, 42, 0.4);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(233, 193, 118, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .newsreader-italic {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="text-on-surface flex items-center justify-center min-h-screen p-6">
+<!-- Ambient Glow Blobs -->
+<div class="glow-blob -top-48 -left-48"></div>
+<div class="glow-blob -bottom-48 -right-48"></div>
+<div class="glow-blob top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+<section class="relative z-10 w-full max-w-7xl mx-auto py-24">
+<!-- Header Section -->
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-5xl md:text-6xl font-light text-on-surface tracking-tight">
+<span class="font-headline">What Our</span>
+<span class="newsreader-italic font-medium">Clients Say</span>
+</h2>
+<p class="text-on-surface-variant font-body text-lg max-w-xl mx-auto opacity-80 tracking-wide">
+                Real results, real stories from our patients.
+            </p>
+</div>
+<!-- Testimonial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+<!-- Card 1: Priya Sharma -->
+<div class="glass-card rounded-xl p-10 flex flex-col items-center text-center transition-all duration-500 hover:border-primary/40 group">
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-primary/20 blur-xl rounded-full scale-125 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<img alt="Priya Sharma" class="w-24 h-24 rounded-full object-cover border-2 border-primary/20 relative z-10" data-alt="Close-up portrait of a young woman with radiant skin smiling softly against a warm, blurred luxury studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWz8dVhtJX8eZYAjJ7c1fwNH0WbuvSl73ckud1QHfMFToBIT9m8j8dBFxUBtltDM_HdA7SfN8kud_jou6tjO8D8wAxmyRgLwImSqoO90Q7nkMmK1uDb_vLUUCzRKHqvxJzI-FJCylIkrE30OrIkDXzURseOvE4-W2NPEVzh_BAypmuRh3O65Aju8UCAxkq_PBQn55C7PsJ6u5z2rf2tnN2nEWIH6sbhkQAuZ4k7DvbX18yOD_jYD1leY3u6JHi-MvhxgxZR5en0mE"/>
+</div>
+<span class="material-symbols-outlined text-primary mb-6 opacity-60 text-4xl" data-weight="fill">format_quote</span>
+<p class="text-on-surface italic font-body leading-relaxed mb-8 text-lg">
+                    "I struggled with acne for years. After just 3 sessions at Derma Glow, my skin has completely transformed. Highly recommend!"
+                </p>
+<div class="mt-auto">
+<h4 class="font-headline text-xl text-primary tracking-wide">Priya Sharma</h4>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant mt-1">Acne Treatment Patient</p>
+</div>
+</div>
+<!-- Card 2: Rahul Mehta (Featured/Scaled) -->
+<div class="glass-card rounded-xl p-12 flex flex-col items-center text-center transition-all duration-500 hover:border-primary/50 group md:scale-105 z-20 bg-surface-container-high/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-primary/30 blur-2xl rounded-full scale-150 opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+<img alt="Rahul Mehta" class="w-28 h-28 rounded-full object-cover border-2 border-primary/30 relative z-10" data-alt="Professional headshot of a middle-aged man with clear skin and well-groomed features, soft cinematic side lighting in a dark office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQjUbmfsVaAt1nsQmd6HtG05CMsO_B8ASBOvksSsgkj1tIOUi4YCFSmYT_Wi4wrgFOpxodvTzBG6xp2SGJwcKzH9PeiwBCVDB1nF07EK44PW-xUHVBjEH-Zq0g0yW48FKFOiaCy7ygKPo4-PayViuK6toD5knRdflYTWKU5gLKwF1if79AAeFBLJ_1JvDtrmYIzfEjRvKZ348WDtHokaGdKEXKoZlzpQIA5lh6W18ayK5_j4jV99VJEysOdsSEWOJZhvimlPlQ0SM"/>
+</div>
+<span class="material-symbols-outlined text-primary mb-6 text-5xl" data-weight="fill">format_quote</span>
+<p class="text-on-surface italic font-body leading-relaxed mb-8 text-xl font-medium">
+                    "The laser treatment was painless and the results were visible after the first session. The team made me feel completely at ease."
+                </p>
+<div class="mt-auto">
+<h4 class="font-headline text-2xl text-primary tracking-wide">Rahul Mehta</h4>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant mt-1">Laser Therapy Patient</p>
+</div>
+</div>
+<!-- Card 3: Anjali Singh -->
+<div class="glass-card rounded-xl p-10 flex flex-col items-center text-center transition-all duration-500 hover:border-primary/40 group">
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-primary/20 blur-xl rounded-full scale-125 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<img alt="Anjali Singh" class="w-24 h-24 rounded-full object-cover border-2 border-primary/20 relative z-10" data-alt="Portrait of an elegant woman with flawless skin looking thoughtfully to the side, natural window light with dark aesthetic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDQ7prIxttAiIaOFRR0f1zZzDUwoDnGXGm3wZqT8GzCKqtu8P4Xox_Ar36hViWzRJCmZGyVkOagjT7O94oDma6GXoEiaArjArTZ319VUWYwblYFon1umT_n7_g_xupfwfm1un1oalECpHlD07mnLSRAcUaKzYc35BqIDtyK-rt04yRyr_qUe8E-73hSKu0uIQXOminiUBnzmIWJDZ4RT2oBP8K8sD5EInARGDIyUIwqU5zyjJPFFF_zUdbg8fMJTN3hsCc1bRRke8"/>
+</div>
+<span class="material-symbols-outlined text-primary mb-6 opacity-60 text-4xl" data-weight="fill">format_quote</span>
+<p class="text-on-surface italic font-body leading-relaxed mb-8 text-lg">
+                    "Absolutely worth every rupee. My skin feels 10 years younger and the staff genuinely cares about your results."
+                </p>
+<div class="mt-auto">
+<h4 class="font-headline text-xl text-primary tracking-wide">Anjali Singh</h4>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant mt-1">Facial Treatment Patient</p>
+</div>
+</div>
+</div>
+<!-- Decoration Element -->
+<div class="mt-20 flex justify-center items-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/40"></div>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+</section>
+</body></html>
